@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFSP - Eventos</title>
+    <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/estilos/style.css">
+</head>
+<body>
+    <header>
+        <object width="100%" height="100%" data="../assets/components/header.html"></object>
+    </header>
+    <main class="eventos">
+        <h1>Inscreva-se</h1>
+        <form action="index.html" method="get" autocomplete="on">
+            <fieldset>
+                <label for="evento">Evento</label>
+                <select name="teste" id="evento" required>
+                    <option value="">-- Selecione --</option>
+                    <option value="voe-sem-asas">Voe sem Asas</option>
+                    <option value="festa-junina">Festa Junina</option>
+                    <option value="semana-tecno">Semana de Tecnologia</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Informações de Acesso</legend>
+                <div>
+                    <label for="usuario">Usuário</label>
+                    <input type="text" id="usuario" autocomplete="username" required>
+                </div>
+                <div>
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" autocomplete="new-password" required>
+                </div>
+                <div>
+                    <label for="senha-conf">Confirme a Senha</label>
+                    <input type="password" id="senha-conf" autocomplete="new-password" required>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+                <div>
+                    <label for="nome-completo">Nome Completo</label>
+                    <input type="text" id="nome-completo" autocomplete="name" required>
+                </div>
+                <div>
+                    <label for="email">E-mail</label>
+                    <input class="block" type="email" id="email" autocomplete="email" required>
+                </div>
+                <div>
+                    <label for="celular">Celular (99) 99999-9999</label>
+                    <input class="block" type="tel" id="celular" autocomplete="tel" required>
+                </div>
+                <fieldset>
+                    <legend>Sexo</legend>
+                    <input type="radio" name="sexo" id="masculino" required>Masculino
+                    <input type="radio" name="sexo" id="feminino" required>Feminino
+                </fieldset>
+                <div>
+                    <label for="nasc">Data de Nascimento</label>
+                    <input type="date" name="data-nascimento" id="nasc" required>
+                </div>
+                <div>
+                    <label for="cor">Cor Favorita</label>
+                    <input type="color" name="cor" id="cor" required>
+                </div>
+                <div>
+                    <label for="github">Perfil do GitHub</label>
+                    <input class="block" type="url" name="github" id="github" required>
+                </div>
+            </fieldset>
+            <input type="submit" value="Inscrever-se">
+            <input type="reset" value="Limpar">
+        </form>
+    </main>
+    <footer>
+        <a href="https://web.facebook.com/ifsppirituba"><img src="../assets/images/facebook.png" width="25px" alt="Ícone do Facebook"></a>
+        <object width="100%" height="100%" data="../assets/components/footer.html"></object>
+    </footer>
+</body>
+</html>

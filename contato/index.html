@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFSP - Contato</title>
+    <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/estilos/style.css">
+</head>
+<body>
+    <header>
+        <object width="100%" data="../assets/components/header.html"></object>
+    </header>
+    <main class="contato">
+        <h1>Mande uma mensagem</h1>
+        <form action="index.html" method="get" autocomplete="on">
+            <ul>
+                <li>
+                    <label for="nome">Nome: </label>
+                    <input class="block" type="text" name="nome" id="nome" autocomplete="name" required>
+                </li>
+                <li>
+                    <label for="email">Email: </label>
+                    <input class="block" type="email" name="email" id="email" autocomplete="email" required>
+                </li>
+                <li>
+                    <label for="telefone">Telefone: </label>
+                    <input class="block" type="tel" name="telefone" id="telefone" autocomplete="tel" required> (99) 99999-9999
+                 </li>
+                 <li>
+                    <label for="assunto">Assunto: </label>
+                    <select name="assunto" id="assunto" required>
+                        <option value="">-- Selecione --</option>
+                        <option value="reclamacao">Recamação</option>
+                        <option value="sugestao">Sugestão</option>
+                    </select>
+                 </li>
+                 <li>
+                    <label for="mensagem">Mensagem</label>
+                    <textarea class="block" name="mensagem" id="mensagem" required></textarea>
+                 </li>
+                 <li>
+                     <fieldset>
+                        <legend>Opções de Resposta</legend>
+                        <label for="email">E-mail</label>
+                        <input type="checkbox" name="respostas" id="email">
+                        <label for="telefone">Telefone</label>
+                        <input type="checkbox" name="respostas" id="telefone">
+                     </fieldset>
+                 </li>
+                 <li>
+                    <input type="submit" value="Enviar">
+                 </li>
+            </ul>
+        </form>
+    </main>
+    <footer>
+        <a href="https://web.facebook.com/ifsppirituba"><img src="../assets/images/facebook.png" width="25px" alt="Ícone do Facebook"></a>
+        <object width="100%" data="../assets/components/footer.html "></object>
+    </footer>
+</body>
+</html>

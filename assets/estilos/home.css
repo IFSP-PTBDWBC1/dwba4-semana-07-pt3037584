@@ -1,0 +1,39 @@
+main.home{
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+}
+
+figcaption > span.negrito{
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+.imagem1{
+    grid-column: 1;
+}
+.imagem2{
+    grid-column: 3; 
+}
+.imagem3{
+    grid-column: 1;
+}
+.imagem4{
+    grid-column: 3; 
+}
+
+main.home > h2{
+    grid-column: 2;
+}
+
+main.home > iframe{
+    grid-column: 1/-1;
+    margin: 0 auto;
+
+}
+
+figure > img{
+    width: 400px;
+}
