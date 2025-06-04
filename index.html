@@ -7,12 +7,61 @@
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/estilos/style.css">
     <link rel="stylesheet" href="assets/estilos/home.css">
+    <link rel="stylesheet" href="assets/estilos/carroussel.css">
+    <script src="./assets/JS/carroussel.js" defer></script>
 </head>
 <body>
     <header id="topo">
         <object data="assets/components/header.html"></object>
     </header>
     <main class="home">
+
+        <div class="carroussel">
+            <ul>
+            <!--Imagem Um-->
+                <li class="slide">
+                    <figure>
+                        <p>1 / 4</p>
+                        <figcaption>Anote Aí | Quarentena</figcaption>
+                        <img src="assets/images/A.png" alt="Anote Aí | Quarentena" style="width:100%; height:auto;">
+                    </figure>
+                </li>
+                <!--Imagem Dois-->
+                 <li class="slide">
+                    <figure>
+                        <p>2 / 4</p>
+                        <figcaption>IFSP no combate ao Coronavírus</figcaption>
+                        <img src="assets/images/B.jpg" alt="IFSP no combate ao Coronavírus" style="width:100%; height:auto;">
+                    </figure>
+                </li>
+                <!--Imagem Três-->
+                <li class="slide">
+                    <figure>
+                        <p>3 / 4</p>
+                        <figcaption>Vestibular ENEM IFSP | Inscrições Gratuitas</figcaption>
+                        <img src="assets/images/C.jpg" alt="Vestibular ENEM IFSP | Inscrições Gratuitas" style="width:100%; height:auto;">
+                    </figure>
+                </li>
+                <!--Vídeo de Youtube-->
+                <li class="slide">
+                    <p>4 / 4</p>
+                    <h2>Conheça os desafios de inovação</h2>
+                    <div class="video">
+                        <iframe width="600px" height="275px" src="https://www.youtube.com/embed/5g5LQe3m8Po?si=PnobEf7M4MM_pw0Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </li>
+            </ul>
+
+            <a class="ant" onclick="mudarSlide(-1)">&#10094;</a>
+            <a class="prox" onclick="mudarSlide(1)">&#10095;</a>
+            <div class="dots">
+                <span class="dot" onclick="slideAtual(1)"></span>
+                <span class="dot" onclick="slideAtual(2)"></span>
+                <span class="dot" onclick="slideAtual(3)"></span>
+                <span class="dot" onclick="slideAtual(4)"></span>
+            </div>
+        </div>
+        
         <figure class="imagem1">
             <img src="assets/images/eleicoes.jpg" alt="Imagem da palestra Seja Raro">
             <figcaption>
